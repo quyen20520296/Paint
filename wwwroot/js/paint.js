@@ -167,14 +167,6 @@ function changeAction(target) {
             canvas.isDrawingMode = true;
             canvas.freeDrawingBrush.width = parseInt(brushWidth.value);
             break;
-        case "undo":
-            canvas.off('mouse:down');
-            canvas.off('mouse:up');
-            canvas.freeDrawingBrush = new fabric.EraserBrush(canvas);
-            canvas.isDrawingMode = true;
-            canvas.freeDrawingBrush.inverted = true;
-            canvas.freeDrawingBrush.width = parseInt(brushWidth.value);
-            break;
         case "draw":
             canvas.off('mouse:down');
             canvas.off('mouse:up');
