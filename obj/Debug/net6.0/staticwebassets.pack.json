@@ -41,8 +41,12 @@
       "PackagePath": "staticwebassets\\img\\icons8-select-64.png"
     },
     {
-      "Id": "D:\\Rosen test\\Paint\\wwwroot\\img\\icons8-spray-16.png",
-      "PackagePath": "staticwebassets\\img\\icons8-spray-16.png"
+      "Id": "D:\\Rosen test\\Paint\\wwwroot\\img\\icons8-spray-can-64.png",
+      "PackagePath": "staticwebassets\\img\\icons8-spray-can-64.png"
+    },
+    {
+      "Id": "D:\\Rosen test\\Paint\\wwwroot\\img\\overview.png",
+      "PackagePath": "staticwebassets\\img\\overview.png"
     },
     {
       "Id": "D:\\Rosen test\\Paint\\wwwroot\\js\\fabric.js",

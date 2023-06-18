@@ -8,12 +8,5 @@ namespace Paint.Controllers
         {
             return View();
         }
-
-        /*[HttpPost]
-        public IActionResult SaveImage(string imageData)
-        {
-            // Save imageData to a file or database
-            return RedirectToAction("Index");
-        }*/
     }
 }

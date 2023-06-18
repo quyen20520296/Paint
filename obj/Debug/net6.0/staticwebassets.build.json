@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mz7SDtfGUyEFgCsekabD51f6X5IBesfZcQNcMjh8JMo=",
+  "Hash": "FnRJD8ww4oEncJr9axe2I/ODCwepr1BvCQ9zNmLkRks=",
   "Source": "Paint",
   "BasePath": "_content/Paint",
   "Mode": "Default",
@@ -204,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\img\\icons8-select-64.png"
     },
     {
-      "Identity": "D:\\Rosen test\\Paint\\wwwroot\\img\\icons8-spray-16.png",
+      "Identity": "D:\\Rosen test\\Paint\\wwwroot\\img\\icons8-spray-can-64.png",
       "SourceId": "Paint",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Rosen test\\Paint\\wwwroot\\",
       "BasePath": "_content/Paint",
-      "RelativePath": "img/icons8-spray-16.png",
+      "RelativePath": "img/icons8-spray-can-64.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,7 +218,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\icons8-spray-16.png"
+      "OriginalItemSpec": "wwwroot\\img\\icons8-spray-can-64.png"
+    },
+    {
+      "Identity": "D:\\Rosen test\\Paint\\wwwroot\\img\\overview.png",
+      "SourceId": "Paint",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Rosen test\\Paint\\wwwroot\\",
+      "BasePath": "_content/Paint",
+      "RelativePath": "img/overview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\overview.png"
     },
     {
       "Identity": "D:\\Rosen test\\Paint\\wwwroot\\js\\fabric.js",
