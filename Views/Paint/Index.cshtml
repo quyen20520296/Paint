@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "MS Paint";
+}
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <div style="margin-bottom:10px;">
+        <button id="save-button" style="display:inline;">Save Image</button>
+        <button id="new-button">New Canvas</button>
+    </div>
+    <!--Controls group-->
+    <div class="controls">
+        <label>Tool:</label>
+        <button id="select" type="button" onclick="changeAction(this)"></button>
+        <button id="erase" type="button" onclick="changeAction(this)"></button>
+        <button id="eye-dropper" type="button" onclick="changeAction(this)"></button>
+        <button id="draw" type="button" onclick="changeAction(this)"></button>
+        <button id="spray" type="button" onclick="changeAction(this)"></button>
+        <label style="margin-left: 50px;">Shape:</label>
+        <button id="line" type="button" onclick="changeAction(this)"></button>
+        <button id="eclipse" type="button" onclick="changeAction(this)"></button>
+        <button id="rectangle" type="button" onclick="changeAction(this)"></button>
+
+        <div style="margin-top:10px;">
+            <!--Brush Width-->
+            <label for="brush-width">Brush width:</label>
+            <input type="number" id="brush-width" value="1" min="1" max="200">
+
+            <!--Resize-->
+            <label style="margin-left: 50px;">Resize:</label>
+            <input type="number" id="canvas-width" value="800" min="1">
+            <label> x </label>
+            <input type="number" id="canvas-height" value="600" min="1">
+            <button id="resize-plus" style="width:40px; height:40px;">  +  </button>
+            <button id="resize-minus" style="width:40px; height:40px;">   -   </button>
+
+            <!--Color picker-->
+            <label for="color-picker" style="margin-left: 50px; vertical-align: middle;">More color:</label>
+            <input type="color" id="color-picker" value="#000000">
+        </div>
+
+        <div style="margin-top:10px;">
+        <!--Brush current color-->
+        <div id="current-color-div" style="display: inline;"></div>
+        <label for="brush-color">Brush current color:</label>
+        <div class="color-wrapper">
+            <div id="current-color" style="background-color: #000000;"></div>
+        </div>
+
+        <!--Color box-->
+        <div style="display: inline;" >
+            <div style="display: inline-block; margin-left:50px;">
+                <label>Basic color box:</label>
+            </div>
+            <div style="background-color:darkgrey; display: inline-block; vertical-align: middle;">
+                <div class="color-box">
+                    <div class="color" style="background-color: #000000;"></div>
+                    <div class="color" style="background-color: #808080;"></div>
+                    <div class="color" style="background-color: #800000;"></div>
+                    <div class="color" style="background-color: #808000;"></div>
+                    <div class="color" style="background-color: #008000;"></div>
+                    <div class="color" style="background-color: #008080;"></div>
+                    <div class="color" style="background-color: #000080;"></div>
+                    <div class="color" style="background-color: #800080;"></div>
+                    <div class="color" style="background-color: #808040;"></div>
+                    <div class="color" style="background-color: #004040;"></div>
+                    <div class="color" style="background-color: #0080FF;"></div>
+                    <div class="color" style="background-color: #004080;"></div>
+                    <div class="color" style="background-color: #4000FF;"></div>
+                    <div class="color" style="background-color: #804000;"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color" style="background-color: #FFFFFF;"></div>
+                    <div class="color" style="background-color: #C0C0C0;"></div>
+                    <div class="color" style="background-color: #FF0000;"></div>
+                    <div class="color" style="background-color: #FFFF00;"></div>
+                    <div class="color" style="background-color: #00FF00;"></div>
+                    <div class="color" style="background-color: #00FFFF;"></div>
+                    <div class="color" style="background-color: #0000FF;"></div>
+                    <div class="color" style="background-color: #FF00FF;"></div>
+                    <div class="color" style="background-color: #FFFF80;"></div>
+                    <div class="color" style="background-color: #00FF80;"></div>
+                    <div class="color" style="background-color: #80FFFF;"></div>
+                    <div class="color" style="background-color: #8080FF;"></div>
+                    <div class="color" style="background-color: #FF0080;"></div>
+                    <div class="color" style="background-color: #FF8040;"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="relative" style="display:inline;">
+        <div id="canvas-container" style="display:inline;">
+            <canvas id="canvas" class="absolute"></canvas>
+        </div>
+    </div>
+    
+</body>
+@section Scripts {
+    <script src="~/js/fabric.min.js"></script>
+    <script src="~/js/paint.js"></script>
+}
